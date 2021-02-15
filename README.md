@@ -4,7 +4,7 @@ Let You interact with your account
 So, let's begin
 
 
-#Classes:
+Classes:
 
 Locales()
 
@@ -19,7 +19,7 @@ ExplicitContentFilter()
 MessageDisplay()
 
 
-#Methods:
+Methods:
 
 createDM()
 
@@ -45,5 +45,5 @@ typing()
 
 getRelationShips()
 
-#That's all!
-#Have fun!
+That's all!
+Have fun!
