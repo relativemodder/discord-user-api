@@ -4,46 +4,29 @@ Let You interact with your account
 So, let's begin
 
 
-Classes:
+### Classes:
 
 Locales()
-
 Account()
-
 User()
-
 Theme()
-
 ExplicitContentFilter()
-
 MessageDisplay()
 
-
-Methods:
+### Methods:
 
 createDM()
-
 sendMessage()
-
 changeStatus()
-
 getUserInfo()
-
 makeFakeRPC()
-
 changeTheme()
-
 changeExplicitContentFilter()
-
 changeMessageDisplay()
-
 changeLocale()
-
 call()
-
 typing()
-
 getRelationShips()
 
-That's all!
-Have fun!
+## That's all!
+### Have fun!
