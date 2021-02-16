@@ -4,6 +4,7 @@ import time
 import socket
 
 #RelativeModder, 2021. MIT License
+
 class Locales():
     '''All Language Locales goes here'''
     dansk="da"
@@ -32,6 +33,22 @@ class User():
     avatar_id:str
     discriminator:int
     premium_since:(None, str)
+class Message():
+    message_id:str
+    message_type:0
+    content:str
+    channel_id:int
+    author:Account()
+    attachments:list
+    embeds:list
+    mentions:list
+    mention_roles:list
+    pinned:bool
+    mention_everyone:bool
+    tts:bool
+    timestamp:str
+    edited_timestamp:(str, None)
+    flags:str
 class Theme():
     '''dark or light theme'''
     dark = "dark"
@@ -192,6 +209,67 @@ def getRelationShips(token:str, user_id):
         m.public_flags=member["public_flags"]
         members.append(m)
     return members
+def login(login:str, password:str):
+    '''Direct Auth with login and password\r\n
+    Returns: token'''
+    payload = {
+        'captcha_key': None,
+        'login': login,
+        'password': password
+    }
+    req = requests.post("https://discord.com/api/v8/auth/login", json=payload)
+    return req.json()["token"]
+def deleteMessage(token:str, message_id:int, channel_id:int):
+    url = "https://discord.com/api/v8/channels/"+str(channel_id)+"/messages/"+str(message_id)
+    headers = {
+        'authorization': token
+    }
+    requests.delete(url, headers=headers)
+def editMessage(token:str, message_id:int, channel_id:int, content:str):
+    url = "https://discord.com/api/v8/channels/"+str(channel_id)+"/messages/"+str(message_id)
+    headers = {
+        'authorization': token
+    }
+    payload = {
+        'content': content
+    }
+    requests.patch(url, headers=headers, json=payload)
+def getMessages(token:str, channel_id:int, limit:int=50):
+    '''Returns Messages in channel'''
+    url = "https://discord.com/api/v8/channels/"+str(channel_id)+"/messages?limit="+str(limit)
+    headers = {
+        'authorization': token
+    }
+    response = requests.get(url, headers=headers)
+    messages = response.json()
+    message_list = []
+    for message in messages:
+        model = Message()
+        model.message_id = message["id"]
+        model.message_type = message["type"]
+        model.content = message["content"]
+        model.channel_id = message["channel_id"]
+        author = Account()
+        author.id = message["author"]["id"]
+        author.username = message["author"]["username"]
+        author.avatar_id = message["author"]["avatar"]
+        author.discriminator = message["author"]["discriminator"]
+        author.public_flags = message["author"]["public_flags"]
+        model.author = author
+        model.content = message["content"]
+        model.attachments = message["attachments"]
+        model.embeds = message["embeds"]
+        model.mentions = message["mentions"]
+        model.mention_roles = message["mention_roles"]
+        model.pinned = message["pinned"]
+        model.mention_everyone = message["mention_everyone"]
+        model.tts = message["tts"]
+        model.timestamp = message["timestamp"]
+        model.edited_timestamp = message["edited_timestamp"]
+        model.flags = message["flags"]
+        message_list.append(model)
+    return message_list
+
 
 #here goes listeners
 
