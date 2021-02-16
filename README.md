@@ -46,5 +46,7 @@ typing()
 
 getRelationShips()
 
+And more you can find in dsuserapi.py
+
 ## That's all!
 ### Have fun!
