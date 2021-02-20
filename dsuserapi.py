@@ -2,6 +2,7 @@ import requests
 import json
 import time
 import socket
+import asyncio
 
 #RelativeModder, 2021. MIT License
 
@@ -271,7 +272,12 @@ def getMessages(token:str, channel_id:int, limit:int=50):
     return message_list
 
 
-#here goes listeners
+def getLatest(token, dmid):
+    latest_message = getMessages(token, dmid, 1)
+    return latest_message[0]
+
+
+
 
 
 #end
