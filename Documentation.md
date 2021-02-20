@@ -156,4 +156,23 @@ Theme():
 
 ## login(email_or_phone, password) -> Direct Authorization
 
-**Returns: **
+**Returns: discord user's token**
+
+
+## deleteMessage(token, message_id, channel_id):
+
+**Returns: None**
+
+
+## editMessage(token, message_id, channel_id, content)
+
+**Returns: None**
+
+
+## getMessages(token, channel_id, limit=50)
+
+>limit - *limit of getting messages*
+>
+**Returns: list of Message()**
+
+# I tired...
