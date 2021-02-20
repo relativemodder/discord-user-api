@@ -82,3 +82,36 @@ _All Language Locales goes here_
 > edited_timestamp - *timestamp of the edit*
 > 
 > flags - *message flags (idk what is it)
+
+
+## Theme
+
+### Oh, it's simple!
+
+Theme():
+
+>dark - *dark theme*
+>
+>light - *light theme*
+>
+
+
+## ExplicitContentFilter
+
+>everyone - *Scan NSFW content from all members*
+>
+>friends - *Scan NSFW content only from friends*
+>
+>noscan - *My friends are good!*
+>
+
+## MessageDisplay
+
+>cozy - *cozy message displaying*
+>
+>compact - *compact message displaying*
+>
+
+### And now...
+
+# Methods!
