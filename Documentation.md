@@ -9,7 +9,7 @@ Let's begin with a couple of classes!
 
 # *Classes in dsuserapi*
 
-*```
+
 class Locales():
 
 _All Language Locales goes here_
@@ -36,4 +36,4 @@ _All Language Locales goes here_
 
 ♦ russian
 
-♦ ukrainian```*
+♦ ukrainian
