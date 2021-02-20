@@ -54,17 +54,31 @@ _All Language Locales goes here_
 ### Message()
 
 > message_id - *ID of message*
+> 
 > message_type - *Number of a type of message*
+> 
 > content - *Content of message*
+> 
 > channel_id - *Channel_id of message, where it was sent*
+> 
 > author - *Account() of sender*
+> 
 > attachments - *List of attachments*
+> 
 > embeds - *List of embeds*
+> 
 > mentions - *list of mentions*
+> 
 > mention_roles - *list of role(s) mention(s)
+> 
 > pinned - *is pinned (bool)*
+> 
 > mention_everyone - *is message mentioned everyone*
+> 
 > tts - *is message using TTS (Text-to-Speech) (bool)*
+> 
 > timestamp - *timestamp of the message, idk how to parse it .-.
+> 
 > edited_timestamp - *timestamp of the edit*
+> 
 > flags - *message flags (idk what is it)
