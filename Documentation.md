@@ -41,12 +41,12 @@ _All Language Locales goes here_
 
 ### Account or User()
 
-  id - *The id of User()*
+>  id - *The id of User()*
   
-  username - *Username of User()*
+>  username - *Username of User()*
   
-  avatar_id - *Asset id of user's avatar*
+>  avatar_id - *Asset id of user's avatar*
   
-  discriminator - *Discriminator of user, example: <b>RelativeModder#5090</b>*
+>  discriminator - *Discriminator of user, example: <b>RelativeModder#5090</b>*
   
-  public_flags - *Public flags of user*
+>  public_flags - *Public flags of user*
