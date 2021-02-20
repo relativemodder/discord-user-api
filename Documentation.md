@@ -115,3 +115,43 @@ Theme():
 ### And now...
 
 # Methods!
+
+## createDM(recepient_user_id, token)
+
+**Returns channel_id of user**
+
+## SendMessage(channel_id, token, content, tts=False, embed={})
+
+**Sends Message() and returns ID**
+
+## change_status(token, text, emoji_name, status="online")
+
+>statuses: online, idle, dnd, invisible
+>
+**Returns: None**
+
+## change_theme(token, theme)
+
+>theme - Theme() state
+>
+**Returns: None**
+
+## getUserInfo(token, user_id)
+
+**Returns: User()**
+
+## changeExplicitContentFilter(token, level:ExplicitContentFilter)
+
+**Returns: None
+
+## typing(token, channel_id)
+
+>Now you are typing! Wow!
+>
+
+## getRelationShips(token, user_id)
+
+**Returns: list of Account() of mutual friends
+
+
+## 
