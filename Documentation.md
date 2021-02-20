@@ -9,18 +9,31 @@ Let's begin with a couple of classes!
 
 # *Classes in dsuserapi*
 
-*```python
+*```
 class Locales():
+
 _All Language Locales goes here_
-♦dansk
-♦deutsch
-♦english_gb
-♦english_us
-♦english
-♦spanish
-♦french
-♦horvatian
-♦italian
-♦netherland
-♦russian
-♦ukrainian```*
+
+♦ dansk
+
+♦ deutsch
+
+♦ english_gb
+
+♦ english_us
+
+♦ english
+
+♦ spanish
+
+♦ french
+
+♦ horvatian
+
+♦ italian
+
+♦ netherland
+
+♦ russian
+
+♦ ukrainian```*
