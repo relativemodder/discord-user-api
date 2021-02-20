@@ -154,4 +154,6 @@ Theme():
 **Returns: list of Account() of mutual friends
 
 
-## 
+## login(email_or_phone, password) -> Direct Authorization
+
+**Returns: **
