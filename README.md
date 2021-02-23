@@ -1,5 +1,7 @@
 Thx for TheSidrym for helping me write library! :3
 
+Dude, ur best
+
 # discord-user-api
 
 ONLY FOR NOT 2-FACTOR AUTH
